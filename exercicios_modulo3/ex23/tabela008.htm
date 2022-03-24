@@ -6,18 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colgroup</title>
     <style>
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        tr.destaque {
+            background-color: chartreuse;
+        }
+        col.cnome {
+            background-color: cadetblue;
+        }
 
     </style>
 </head>
 <body>
     <h1>Exercicio de Tabela</h1>
     <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col cladd="cprof">
+        </colgroup>
         <caption>Cadastro</caption>
         <tr>
-            <th>Nome</th>
-            <th>Sexo</th>
-            <th>Idade</th>
-            <th>Profissao</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissao</th>
         </tr>
         <tr>
             <td>Jack</td>
@@ -31,17 +52,17 @@
             <td>23</td>
             <td>Hero</td>
         </tr>
-        <tr>
+        <tr class="destaque">
             <td>Roanita</td>
             <td>F</td>
             <td>30</td>
             <td>Blogueira</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>James Bond</td>
+            <td>M</td>
+            <td>43</td>
+            <td>Espiao</td>
         </tr>
         <tr>
             <td></td>
